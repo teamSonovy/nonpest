@@ -12,10 +12,7 @@
 	<link rel="stylesheet" href="css/skippr.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis|Josefin+Sans|Josefin+Slab|Pavanam|Source+Sans+Pro" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/animation_nav.js"> </script>
-	<!-- <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
-	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
 	<link rel="shortcut icon" href="img/vancoffee.png">
 <!-- 世界地図に必要なセット -->
@@ -25,8 +22,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?v=3&" type="text/javascript" charset="UTF-8"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
-	<script src="js/map.js"></script>
-	<script src="js/tokyo_map.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCzdiKAjgOBHm3g5NpcYMpyKtukP4S_Og"></script>
 
 </head>
@@ -50,38 +47,61 @@
 			<img src="../img/twitter.svg" />
 		</div>
 	</div>
-	<div class="top">
-		<h1>
-			NON PEST とは
-		</h1>
-		<h3>
-			室内に現れた虫を撃退し、世界の快適な空間を守ることを理念に
-			活動する団体です。
-		</h3>
-	</div>
-	<div class="team_nonpest">
-		<h1>TEAM NON PESTER</h1>
-		<div class="menber">
-			<img class="img-circle" src="../img/kenshirou.jpeg" />
-			<h3>ケンシロウ</h3>
-			<p>自己紹介</p>
-		</div>
-		<div class="menber">
-			<img class="img-circle" src="../img/kenshirou.jpeg" />
-			<h3>ケンシロウ</h3>
-			<p>自己紹介</p>
-		</div>
-		<div class="menber">
-			<img class="img-circle" src="../img/kenshirou.jpeg" />
-			<h3>ケンシロウ</h3>
-			<p>自己紹介</p>
-		</div>
 
-	</div>
+
+  <div class="grid">
+    <div class="grid-item">
+        <div class="ariticle_box">
+            <div class="box_img">
+              <img src="../img/bch1.jpg" />
+            </div>
+            <div class="box_text">
+              hogehoge
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-item grid-item--width2">
+      <div class="ariticle_box">
+          <div class="box_img">
+            <img src="../img/bch1.jpg" />
+          </div>
+          <div class="box_text">
+            hogehoge
+          </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="ariticle_box">
+          <div class="box_img">
+            <img src="../img/bch1.jpg" />
+          </div>
+          <div class="box_text">
+            hogehoge
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 	<section class="beans_mania_logo">
 			<img src="../img/nonpest_logo.svg" />
 	</section>
+
+  <script>
+    $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 400,
+    percentPosition: true,
+    gutter: 30
+
+
+  });
+  </script>
 
 
 </body>
